@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0b0d">
+  <meta name="description" content="DSN — اكتشف الألعاب والأنمي والأفلام في مكان واحد. معلومات وتصنيفات وروابط رسمية.">
+  <title>DSN | عالم الألعاب والأنمي والأفلام</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="DSN الصفحة الرئيسية"><span class="brand-mark">D</span><span>DSN<span class="brand-dot">.</span></span></a>
+    <nav class="main-nav" aria-label="التنقل الرئيسي">
+      <button class="nav-link active" data-category="all">الرئيسية</button>
+      <button class="nav-link" data-category="games">الألعاب</button>
+      <button class="nav-link" data-category="anime">الأنمي</button>
+      <button class="nav-link" data-category="movies">الأفلام</button>
+    </nav>
+    <a class="header-cta" href="#discover">اكتشف الآن <span>↙</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> بوابتك إلى عالم الترفيه</div>
+        <h1>عالمك.<br><span>قواعدك.</span></h1>
+        <p>اكتشف ألعابك القادمة، وتعرّف على الأنميات التي تستحق المشاهدة، واستكشف الأفلام التي ستبقى في ذاكرتك — كل ذلك في مكان واحد.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#discover">استكشف المكتبة <span>↙</span></a>
+          <button class="button button-ghost" id="featuredButton">اختيار عشوائي <span>✦</span></button>
+        </div>
+        <div class="hero-stats"><div><strong>03</strong><span>عوالم رئيسية</span></div><i></i><div><strong>∞</strong><span>اكتشافات جديدة</span></div></div>
+      </div>
+      <div class="hero-art" aria-label="تصميم فني تجريدي أحمر وأسود">
+        <div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="art-core"><span>DSN</span><small>DISCOVER YOUR NEXT OBSESSION</small></div>
+        <div class="art-chip chip-top">GAME / ANIME / CINEMA</div><div class="art-chip chip-bottom">EST. FOR FANS</div>
+        <div class="art-cross">✳</div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO EXPLORE</span><span class="line"></span><span>01 — 03</span></div>
+    </section>
+
+    <section class="discover section-wrap" id="discover">
+      <div class="section-heading">
+        <div><div class="eyebrow">مكتبة DSN</div><h2>اكتشف <span>شيئًا جديدًا</span></h2><p>معلومات مختصرة وروابط لمصادر رسمية — اختر عالمك وابدأ.</p></div>
+        <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث عن لعبة، أنمي أو فيلم..." aria-label="ابحث في المكتبة"><kbd>⌘ K</kbd></div>
+      </div>
+      <div class="filters" role="group" aria-label="تصفية المحتوى">
+        <button class="filter active" data-category="all">الكل <span id="countAll">09</span></button>
+        <button class="filter" data-category="games">🎮 الألعاب <span>03</span></button>
+        <button class="filter" data-category="anime">⛩ الأنمي <span>03</span></button>
+        <button class="filter" data-category="movies">🎬 الأفلام <span>03</span></button>
+      </div>
+      <div class="content-grid" id="contentGrid" aria-live="polite"></div>
+      <div class="empty-state" id="emptyState" hidden><div>⌕</div><h3>لم نعثر على نتائج</h3><p>جرّب كلمة مختلفة أو غيّر التصنيف.</p><button class="button button-ghost" id="resetSearch">عرض كل المحتوى</button></div>
+      <div class="library-footer"><span id="resultCount">عرض 9 عناصر</span><span>يتم تحديث المكتبة يدويًا في هذه النسخة التجريبية</span></div>
+    </section>
+
+    <section class="feature-band">
+      <div class="feature-symbol">✳</div>
+      <div><div class="eyebrow">مصمم للفضوليين</div><h2>ليست مجرد قائمة.<br><span>إنها نقطة البداية.</span></h2></div>
+      <p>صفحات تعريفية واضحة، وتصنيفات سهلة، وروابط تساعدك على الوصول إلى المواقع الرسمية ومصادر المعلومات.</p>
+      <a href="#about" class="text-link">تعرف على DSN <span>↙</span></a>
+    </section>
+
+    <section class="about section-wrap" id="about">
+      <div><div class="eyebrow">عن المشروع</div><h2>كل ما تحبّه،<br><span>بواجهة واحدة.</span></h2></div>
+      <div class="about-copy"><p>DSN مساحة لاكتشاف الترفيه الرقمي، تجمع الألعاب والأنمي والأفلام في تجربة واحدة بسيطة وسريعة. هذه النسخة نموذج أولي قابل للتطوير وإضافة محتوى جديد إليه.</p><div class="about-points"><span><b>01</b> بحث وتصنيفات</span><span><b>02</b> صفحات تعريفية</span><span><b>03</b> روابط خارجية</span></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#"><span class="brand-mark">D</span><span>DSN<span class="brand-dot">.</span></span></a><span>© <span id="year"></span> DSN — صُنع لعشاق الترفيه.</span><a href="#discover">العودة للأعلى ↑</a></footer>
+
+  <div class="modal-backdrop" id="detailModal" hidden>
+    <article class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+      <div class="detail-art" id="detailArt"><span id="detailEmoji">✦</span><small id="detailTag">DSN SELECT</small></div>
+      <div class="detail-content"><div class="eyebrow" id="detailCategory">تصنيف</div><h2 id="detailTitle">عنوان المحتوى</h2><p id="detailDescription"></p><div class="detail-meta" id="detailMeta"></div><a class="button button-primary" id="detailLink" href="#" target="_blank" rel="noopener noreferrer">زيارة المصدر <span>↗</span></a><p class="source-note">قد يفتح الرابط موقعًا خارجيًا. تخضع الروابط وسياسات المحتوى للجهات المالكة لها.</p></div>
+    </article>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
